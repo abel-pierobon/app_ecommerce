@@ -1,0 +1,16 @@
+{
+    "marcas": [
+        {
+            "id": 1,    
+            "marca": "Sony"
+        },
+        {
+            "id": 2,
+            "marca": "Microsoft"
+        },
+        {
+            "id": 3,
+            "marca": "Xbox"
+        }
+    ]
+}
