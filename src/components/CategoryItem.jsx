@@ -4,8 +4,8 @@ import { Colors } from "../constants/colors";
 import Card from "./Card";
 const categoryItem = ({ category }) => {
     return (
-        <Card style={styles.container}>
-            <Text style={styles.list}>{category.marca}</Text>
+        <Card style={{borderTopRightRadius: 7, borderTopLeftRadius: 7, borderBottomLeftRadius: 7}}>
+            <Text style={styles.list}>{category}</Text>
         </Card>
     );
 };
@@ -14,7 +14,7 @@ export default categoryItem;
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: Colors.azul,
+        backgroundColor: Colors.celeste,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
         elevation: 17,
         marginBottom: 10,
         marginTop: 20,
+        
     },
     list: {
         gap: 50,

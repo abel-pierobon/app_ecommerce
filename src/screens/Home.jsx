@@ -2,13 +2,13 @@ import { FlatList, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import category from "../Data/category.json";
 import CategoryItem from "../components/CategoryItem";
+
 const Home = () => {
     return (
         <View style={styles.container}>
-            <Text>Productos</Text>
             <FlatList
-                data={category.marcas}
-                keyExtractor={(item) => item.id.toString()}
+                data={category.sort()}
+                keyExtractor={(item) => item.toString()}
                 renderItem={({item}) => <CategoryItem category={item}/>}
                 style={styles.flatlist}
                 showsVerticalScrollIndicator={false}

@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from "react-native";
 import { Colors } from "../constants/colors";
 
-const Card = ({children}) => {
+const Card = ({children,style}) => {
     return (
-        <View style={styles.container}>
+        <View style={{...styles.container,...style}}>
             {children}
         </View>
     );
@@ -11,7 +11,7 @@ const Card = ({children}) => {
 export default Card;
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: Colors.azul,
+        backgroundColor: Colors.celeste,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
